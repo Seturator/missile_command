@@ -5,6 +5,12 @@ import turtle
 BASE_PATH = os.path.dirname(__file__)
 ENEMY_COUNT = 2
 BASE_X, BASE_Y = 0, -300
+BUILDING_NAMES = {
+        'house': [BASE_X - 400, BASE_Y],
+        'kremlin': [BASE_X - 200, BASE_Y],
+        'nuclear': [BASE_X + 200, BASE_Y],
+        'skyscraper': [BASE_X + 400, BASE_Y]
+    }
 
 
 class Missile:
@@ -93,17 +99,20 @@ class Building:
     def draw(self):
         pic_name = self.get_pic_name()
         pic_path = os.path.join(BASE_PATH, "images", pic_name)
-        if self.pen.shape() != pic_path:
-            window.register_shape(pic_path)
-            self.pen.shape(pic_path)
-        if self.health != self.title_health:
-            self.title_health = self.health
-            self.title.clear()
-            self.title.write(str(self.title_health), align='center', font=["Arial", 20, "bold"])
-
+        if self.is_alive():
+            if self.pen.shape() != pic_path:
+                window.register_shape(pic_path)
+                self.pen.shape(pic_path)
+            if self.health != self.title_health:
+                self.title_health = self.health
+                self.title.clear()
+                self.title.write(str(self.title_health), align='center', font=["Arial", 20, "bold"])
+        # else:
+        #     self.pen.hideturtle()
+        #     self.title.clear()
 
     def is_alive(self):
-        return self.health > 0
+        return self.health >= 0
 
 
 class MissileBase(Building):
@@ -111,7 +120,7 @@ class MissileBase(Building):
 
     def get_pic_name(self):
         for missile in our_missiles:
-            if missile.distance(self.x, self.y) <30:
+            if missile.distance(self.x, self.y) < 30:
                 pic_name = f"{self.name}_opened.gif"
                 break
         else:
@@ -166,34 +175,8 @@ def check_impact():
             continue
         for building in buildings:
             if enemy_missile.distance(building.x, building.y) < enemy_missile.radius * 10:
-                building.health -= 25
+                building.health -= 500
                 print(f'{building.name} - {building.health}')
-
-
-window = turtle.Screen()
-window.setup(1200 + 3, 740 + 4)
-window.bgpic(os.path.join(BASE_PATH, "images", "background.png"))
-window.screensize(1200, 740)
-# window.tracer(n=1.5)
-window.onclick(fire_missile)
-
-our_missiles = []
-enemy_missiles = []
-buildings = []
-
-base = MissileBase(x=BASE_X, y=BASE_Y, name='base')
-buildings.append(base)
-
-building_names = {
-    'house': [BASE_X - 400, BASE_Y],
-    'kremlin': [BASE_X - 200, BASE_Y],
-    'nuclear': [BASE_X + 200, BASE_Y],
-    'skyscraper': [BASE_X + 400, BASE_Y]
-}
-
-for name, position in building_names.items():
-    building = Building(x=position[0], y=position[1], name=name)
-    buildings.append(building)
 
 
 def draw_buildings():
@@ -201,13 +184,49 @@ def draw_buildings():
         building.draw()
 
 
+window = turtle.Screen()
+window.setup(1200 + 3, 740 + 4)
+window.screensize(1200, 740)
+
+
+def game():
+    global our_missiles, enemy_missiles, buildings, base
+
+    window.clear()
+    window.bgpic(os.path.join(BASE_PATH, "images", "background.png"))
+    window.tracer(n=3)
+    window.onclick(fire_missile)
+
+    our_missiles = []
+    enemy_missiles = []
+    buildings = []
+
+    base = MissileBase(x=BASE_X, y=BASE_Y, name='base')
+    buildings.append(base)
+
+    for name, position in BUILDING_NAMES.items():
+        building = Building(x=position[0], y=position[1], name=name)
+        buildings.append(building)
+
+    while True:
+        window.update()
+        if game_over():
+            continue
+        draw_buildings()
+        check_impact()
+        check_enemy_count()
+        check_interceptions()
+        move_missiles(missiles=our_missiles)
+        move_missiles(missiles=enemy_missiles)
+
+    pen = turtle.Turtle(visible=False)
+    pen.speed(0)
+    pen.penup()
+    pen.write('game over', align='center', font=['Arial', 40, 'bold'])
+
+
 while True:
-    window.update()
-    if game_over():
-        continue
-    draw_buildings()
-    check_impact()
-    check_enemy_count()
-    check_interceptions()
-    move_missiles(missiles=our_missiles)
-    move_missiles(missiles=enemy_missiles)
+    game()
+    answer: object = window.textinput(title='Try again?', prompt='y/n')
+    if answer != 'y':
+        break
