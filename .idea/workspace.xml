@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80515589-dba4-420d-809a-6c64af6c6b6f" name="Default Changelist" comment="" />
+    <list default="true" id="80515589-dba4-420d-809a-6c64af6c6b6f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,25 +13,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/missile_command$game.coverage" NAME="game Coverage Results" MODIFIED="1548525661249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/missile_command$game.coverage" NAME="game Coverage Results" MODIFIED="1548601931854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="405">
+              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
               <folding>
-                <element signature="e#1#14#0" expanded="true" />
-                <element signature="e#253#1525#0" />
-                <element signature="e#721#1176#0" />
-                <element signature="e#826#931#0" />
-                <element signature="e#976#1719#0" />
-                <element signature="e#1749#1815#0" />
-                <element signature="e#1848#2203#0" />
-                <element signature="e#2627#2649#0" />
-                <element signature="e#2676#2971#0" />
+                <element signature="e#239#1503#0" />
+                <element signature="e#1429#1893#0" />
+                <element signature="e#1924#1981#0" />
+                <element signature="e#1534#1625#0" />
+                <element signature="e#1658#1795#0" />
+                <element signature="e#1831#2020#0" />
+                <element signature="e#2052#2118#0" />
+                <element signature="e#2152#2445#0" />
+                <element signature="e#2760#2782#0" />
+                <element signature="e#2809#3074#0" />
+                <element signature="e#3641#3716#0" />
               </folding>
             </state>
           </provider>
@@ -47,11 +53,12 @@
       <find>our_missiles</find>
       <find>missile</find>
       <find>our_info</find>
+      <find>base</find>
     </findStrings>
     <replaceStrings>
       <replace>missiles</replace>
-      <replace>pen</replace>
       <replace>our_missile</replace>
+      <replace>pen</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -77,6 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,15 +96,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/git-bash.exe" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Perforce" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,17 +158,19 @@
       <updated>1548414129906</updated>
       <workItem from="1548414133109" duration="18065000" />
       <workItem from="1548440579617" duration="4303000" />
-      <workItem from="1548493050938" duration="12615000" />
+      <workItem from="1548493050938" duration="13778000" />
+      <workItem from="1548597547207" duration="160000" />
+      <workItem from="1548598334777" duration="2643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34983000" />
+    <option name="totallyTimeSpent" value="38949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15355521" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12556732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -188,6 +197,46 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -249,18 +298,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="405">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
           <folding>
-            <element signature="e#1#14#0" expanded="true" />
-            <element signature="e#253#1525#0" />
-            <element signature="e#721#1176#0" />
-            <element signature="e#826#931#0" />
-            <element signature="e#976#1719#0" />
-            <element signature="e#1749#1815#0" />
-            <element signature="e#1848#2203#0" />
-            <element signature="e#2627#2649#0" />
-            <element signature="e#2676#2971#0" />
+            <element signature="e#239#1503#0" />
+            <element signature="e#1429#1893#0" />
+            <element signature="e#1924#1981#0" />
+            <element signature="e#1534#1625#0" />
+            <element signature="e#1658#1795#0" />
+            <element signature="e#1831#2020#0" />
+            <element signature="e#2052#2118#0" />
+            <element signature="e#2152#2445#0" />
+            <element signature="e#2760#2782#0" />
+            <element signature="e#2809#3074#0" />
+            <element signature="e#3641#3716#0" />
           </folding>
         </state>
       </provider>
