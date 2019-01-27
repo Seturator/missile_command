@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80515589-dba4-420d-809a-6c64af6c6b6f" name="Default Changelist" comment="Коррекция положения старта рокет + увелечиние вражеских ракет до 2-х штук">
+    <list default="true" id="80515589-dba4-420d-809a-6c64af6c6b6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
     </list>
@@ -12,18 +12,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/missile_command$game.coverage" NAME="game Coverage Results" MODIFIED="1548605391615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/missile_command$game.coverage" NAME="game Coverage Results" MODIFIED="1548607508542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="-948">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#239#1503#0" />
-                <element signature="e#1426#2474#0" />
                 <element signature="e#2444#2721#0" />
                 <element signature="e#1534#1625#0" />
                 <element signature="e#1658#1795#0" />
@@ -93,6 +92,11 @@
               <item name="missile_command" type="b2602c69:ProjectViewProjectNode" />
               <item name="missile_command" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="missile_command" type="b2602c69:ProjectViewProjectNode" />
+              <item name="missile_command" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -161,7 +165,7 @@
       <workItem from="1548440579617" duration="4303000" />
       <workItem from="1548493050938" duration="13778000" />
       <workItem from="1548597547207" duration="160000" />
-      <workItem from="1548598334777" duration="6387000" />
+      <workItem from="1548598334777" duration="8497000" />
     </task>
     <task id="LOCAL-00001" summary="Класс зданий + наследование">
       <created>1548602303443</created>
@@ -198,32 +202,40 @@
       <option name="project" value="LOCAL" />
       <updated>1548605492867</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Вражеские ракеты больше не стреляют в уничтоженные здания">
+      <created>1548606091029</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548606091029</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42693000" />
+    <option name="totallyTimeSpent" value="44803000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12556732" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12556732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30272108" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2834395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965987" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.32993197" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" visible="true" weight="0.32961783" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.3282313" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32993197" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32993197" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -285,7 +297,8 @@
     <MESSAGE value="Изменение визуального состояния зданий от процента здоровья" />
     <MESSAGE value="Анимация базы" />
     <MESSAGE value="Коррекция положения старта рокет + увелечиние вражеских ракет до 2-х штук" />
-    <option name="LAST_COMMIT_MESSAGE" value="Коррекция положения старта рокет + увелечиние вражеских ракет до 2-х штук" />
+    <MESSAGE value="Вражеские ракеты больше не стреляют в уничтоженные здания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Вражеские ракеты больше не стреляют в уничтоженные здания" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/base.gif">
@@ -328,15 +341,6 @@
     <entry file="file://$PROJECT_DIR$/images/kremlin_1.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/house_1.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/house_2.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/house_3.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/base_opened.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -348,13 +352,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/house_3.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/house_2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/house_1.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/profiler/prof_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="-948">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="e#239#1503#0" />
-            <element signature="e#1426#2474#0" />
             <element signature="e#2444#2721#0" />
             <element signature="e#1534#1625#0" />
             <element signature="e#1658#1795#0" />

@@ -74,6 +74,15 @@ class Building:
         pen.showturtle()
         self.pen = pen
 
+        title = turtle.Turtle()
+        title.hideturtle()
+        title.speed(0)
+        title.penup()
+        title.setpos(x=self.x, y=self.y-75)
+        title.write(str(self.health), align='center', font=["Arial", 20, "bold"])
+        self.title = title
+        self.title_health = self.health
+
     def get_pic_name(self):
         if self.health < self.INITIAL_HEALTH * 0.2:
             return f"{self.name}_3.gif"
@@ -87,6 +96,11 @@ class Building:
         if self.pen.shape() != pic_path:
             window.register_shape(pic_path)
             self.pen.shape(pic_path)
+        if self.health != self.title_health:
+            self.title_health = self.health
+            self.title.clear()
+            self.title.write(str(self.title_health), align='center', font=["Arial", 20, "bold"])
+
 
     def is_alive(self):
         return self.health > 0
@@ -157,9 +171,9 @@ def check_impact():
 
 
 window = turtle.Screen()
-window.setup(1200 + 3, 700 + 3)
+window.setup(1200 + 3, 740 + 4)
 window.bgpic(os.path.join(BASE_PATH, "images", "background.png"))
-window.screensize(1200, 600)
+window.screensize(1200, 740)
 # window.tracer(n=1.5)
 window.onclick(fire_missile)
 
