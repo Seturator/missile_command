@@ -3,7 +3,7 @@ import random
 import turtle
 
 BASE_PATH = os.path.dirname(__file__)
-ENEMY_COUNT = 1
+ENEMY_COUNT = 2
 BASE_X, BASE_Y = 0, -300
 
 
@@ -94,7 +94,7 @@ class MissileBase(Building):
 
     def get_pic_name(self):
         for missile in our_missiles:
-            if missile.distance(self.x, self.y) <20:
+            if missile.distance(self.x, self.y) <30:
                 pic_name = f"{self.name}_opened.gif"
                 break
         else:
@@ -103,7 +103,7 @@ class MissileBase(Building):
 
 
 def fire_missile(x, y):
-    info = Missile(color='white', x=BASE_X, y=BASE_Y, x2=x, y2=y)
+    info = Missile(color='white', x=BASE_X, y=BASE_Y + 10, x2=x, y2=y)
     our_missiles.append(info)
 
 
