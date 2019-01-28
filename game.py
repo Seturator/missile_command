@@ -112,7 +112,7 @@ class Building:
         #     self.title.clear()
 
     def is_alive(self):
-        return self.health > 0
+        return self.health >= 0
 
 
 class MissileBase(Building):

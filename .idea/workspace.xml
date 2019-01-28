@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80515589-dba4-420d-809a-6c64af6c6b6f" name="Default Changelist" comment="Игра закончена, но по какой-то причине не работает рестарт">
+    <list default="true" id="80515589-dba4-420d-809a-6c64af6c6b6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
     </list>
@@ -12,24 +12,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/missile_command$game.coverage" NAME="game Coverage Results" MODIFIED="1548684506688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/missile_command$game.coverage" NAME="game Coverage Results" MODIFIED="1548687007077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2609">
-              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+            <state relative-caret-position="215">
+              <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
               <folding>
                 <element signature="e#135#314#0" />
-                <element signature="e#4149#4338#0" />
-                <element signature="e#4370#4436#0" />
-                <element signature="e#4470#4763#0" />
-                <element signature="e#4787#4809#0" />
-                <element signature="e#4836#5165#0" />
-                <element signature="e#5194#5244#0" />
-                <element signature="e#5263#6050#0" />
               </folding>
             </state>
           </provider>
@@ -88,11 +81,6 @@
             <path>
               <item name="missile_command" type="b2602c69:ProjectViewProjectNode" />
               <item name="missile_command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="missile_command" type="b2602c69:ProjectViewProjectNode" />
-              <item name="missile_command" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -164,7 +152,8 @@
       <workItem from="1548493050938" duration="13778000" />
       <workItem from="1548597547207" duration="160000" />
       <workItem from="1548598334777" duration="11577000" />
-      <workItem from="1548681979484" duration="2349000" />
+      <workItem from="1548681979484" duration="2413000" />
+      <workItem from="1548686904476" duration="194000" />
     </task>
     <task id="LOCAL-00001" summary="Класс зданий + наследование">
       <created>1548602303443</created>
@@ -222,22 +211,29 @@
       <option name="project" value="LOCAL" />
       <updated>1548611304496</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Игра закончена">
+      <created>1548684838568</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1548684838568</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50232000" />
+    <option name="totallyTimeSpent" value="50490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12708019" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12859304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2834395" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2834395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39808917" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,7 +309,8 @@
     <MESSAGE value="Вражеские ракеты больше не стреляют в уничтоженные здания" />
     <MESSAGE value="Отображение здоровья" />
     <MESSAGE value="Игра закончена, но по какой-то причине не работает рестарт" />
-    <option name="LAST_COMMIT_MESSAGE" value="Игра закончена, но по какой-то причине не работает рестарт" />
+    <MESSAGE value="Игра закончена" />
+    <option name="LAST_COMMIT_MESSAGE" value="Игра закончена" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/base.gif">
@@ -399,17 +396,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2609">
-          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+        <state relative-caret-position="215">
+          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
           <folding>
             <element signature="e#135#314#0" />
-            <element signature="e#4149#4338#0" />
-            <element signature="e#4370#4436#0" />
-            <element signature="e#4470#4763#0" />
-            <element signature="e#4787#4809#0" />
-            <element signature="e#4836#5165#0" />
-            <element signature="e#5194#5244#0" />
-            <element signature="e#5263#6050#0" />
           </folding>
         </state>
       </provider>
