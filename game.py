@@ -112,7 +112,7 @@ class Building:
         #     self.title.clear()
 
     def is_alive(self):
-        return self.health >= 0
+        return self.health > 0
 
 
 class MissileBase(Building):
@@ -166,7 +166,7 @@ def check_interceptions():
 
 
 def game_over():
-    return base.health < 0
+    return base.health < 1
 
 
 def check_impact():
@@ -175,18 +175,13 @@ def check_impact():
             continue
         for building in buildings:
             if enemy_missile.distance(building.x, building.y) < enemy_missile.radius * 10:
-                building.health -= 500
+                building.health -= 25
                 print(f'{building.name} - {building.health}')
 
 
 def draw_buildings():
     for building in buildings:
         building.draw()
-
-
-window = turtle.Screen()
-window.setup(1200 + 3, 740 + 4)
-window.screensize(1200, 740)
 
 
 def game():
@@ -211,7 +206,11 @@ def game():
     while True:
         window.update()
         if game_over():
-            continue
+            pen = turtle.Turtle(visible=False)
+            pen.speed(0)
+            pen.penup()
+            pen.write('game over', align='center', font=['Arial', 40, 'bold'])
+            break
         draw_buildings()
         check_impact()
         check_enemy_count()
@@ -219,14 +218,13 @@ def game():
         move_missiles(missiles=our_missiles)
         move_missiles(missiles=enemy_missiles)
 
-    pen = turtle.Turtle(visible=False)
-    pen.speed(0)
-    pen.penup()
-    pen.write('game over', align='center', font=['Arial', 40, 'bold'])
 
+window = turtle.Screen()
+window.setup(1200 + 3, 740 + 4)
+window.screensize(1200, 740)
 
 while True:
     game()
-    answer: object = window.textinput(title='Try again?', prompt='y/n')
+    answer = window.textinput(title='GAME OVER', prompt='Try again?\n y/n')
     if answer != 'y':
         break
