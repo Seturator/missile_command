@@ -189,7 +189,7 @@ def game():
 
     window.clear()
     window.bgpic(os.path.join(BASE_PATH, "images", "background.png"))
-    window.tracer(n=3)
+    window.tracer(n=1.5)
     window.onclick(fire_missile)
 
     our_missiles = []
